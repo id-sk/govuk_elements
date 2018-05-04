@@ -217,7 +217,7 @@ module.exports = {
     })
 
     app.get('/uvod/id-sk', function (req, res) {
-      var pageName = 'Čo je ID-SK'
+      var pageName = 'Čo je dizajn manuál ID-SK'
       res.render('introduction/id-sk', { 'page_name': pageName })
     })
 
@@ -227,8 +227,13 @@ module.exports = {
     })
 
     app.get('/uvod/metodika-ucd', function (req, res) {
-      var pageName = 'Metodika UCD (user-centered dizajn)'
+      var pageName = 'Metodické usmernenie'
       res.render('introduction/metodika_ucd', { 'page_name': pageName })
+    })
+
+    app.get('/uvod/ako-zacat-s-vyvojom', function (req, res) {
+      var pageName = 'Ako začať s vývojom'
+      res.render('introduction/ako-zacat-s-vyvojom', { 'page_name': pageName })
     })
 
     // Patterns
@@ -339,11 +344,6 @@ module.exports = {
     app.get('/vzory/pouzivatelske-mena', function (req, res) {
       var pageName = 'Používateľské mená'
       res.render('patterns/pouzivatelske-mena', { 'page_name': pageName })
-    })
-
-    app.get('/vzory/ako-zacat-s-vyvojom', function (req, res) {
-      var pageName = 'Ako začať s vývojom'
-      res.render('introduction/ako-zacat-s-vyvojom', { 'page_name': pageName })
     })
 
     // Slovnik
