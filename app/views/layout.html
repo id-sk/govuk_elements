@@ -35,5 +35,26 @@
   {% include "includes/scripts.html" %}
 {% endblock %}
 
+{% block footer_top %}
+  <div class="footer-logo">
+    <a href="#">
+      <img src="/public/images/ministry_logo.png" title="Ministerstvo financií Slovenskej republiky" alt="Ministerstvo financií Slovenskej republiky" class="logo">
+    </a>
+  </div>
+{% endblock %}
+
 {% block licence_message %}
+  <p>
+    Prevádzkovateľom služby je Ministerstvo financií Slovenskej republiky.<br />
+    Vytvorené v súlade s Jednotným dizajn manuálom elektronických služieb.
+  </p>
+{% endblock %}
+  
+
+{% block footer_support_links %}
+  <nav id="footer-menu">
+    <ul id="footer-links">
+      <li><a href="https://www.vicepremier.gov.sk/index.php/kontakty/index.html">Kontakt</a></li>
+    </ul>
+  </nav>
 {% endblock %}
