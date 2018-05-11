@@ -50,13 +50,14 @@
         Nadpisy
     </h3>
 
+
     <ul class="list list-bullet text">
         <li>V nadpisoch používajte veľké písmeno len na začiatku prvého slova a podľa pravidiel slovenského pravopisu. Nepoužívajte tzv. kapitálky na celé nadpisy.</li>
         <li>Dôsledne používajte nadpisy pre vytvorenie správnej a zrozumiteľnej hierarchie.</li>
     </ul>
 
     <div class="example">
-        {% include "snippets/typography_headings_example.html" %}
+      {% include "snippets/typography_headings.html" %}
     </div>
 
     <pre>
@@ -76,12 +77,13 @@
         <li>Na každej strane by mal byť maximálne jeden úvodný odsek.</li>
     </ul>
 
-    <div class="example">
-        <div class="text">
-            {% include "snippets/typography_lead_paragraph_example.html" %}
-        </div>
-    </div>
 
+<div class="example">
+  <div class="text">
+    {% include "snippets/typography_lead_paragraph.html" %}
+  </div>
+</div>
+  
     <pre>
 <code class="language-markup">
   {% filter escape %}
@@ -90,26 +92,29 @@
 </code>
 </pre>
 
-    <h3 class="heading-medium" id="typography-body-copy">
-        Hlavný text
-    </h3>
 
-    <ul class="list list-bullet text">
-        <li>Veľkosť hlavného textu je 20 pixelov, pre menšie obrazovky 16 pixelov.</li>
-        <li>Menšiu veľkosť písma použite iba vtedy, ak to používateľ potrebuje (napr. 16, 14 alebo 12 pixelov).</li>
-        <li>Uistite sa, že riadky textu nepresahujú 75 znakov, keďže viac znakov urobí text menej čitateľným.</li>
-        <li>Veľkosť písma sa definuje v relatívnych jednotkách, pomocou hodnôt xx-small, x-small, small, medium, large, x-large a xx-large alebo pomocou percent, hodnôt smaller, larger a jednotiek em a ex. Veľkosť písma sa nedefinuje prostredníctvom jednotiek pt, pc, in, cm, mm a px.</li>
-        <li>Neodporúča sa nadmerné používanie tučného písma a používanie šikmého rezu písma (kurzíva).</li>
-        <li>Odstavce textu by sa mali zarovnávať vždy doľava, nikdy nie k obom okrajom.</li>
-    </ul>
+  <h3 class="heading-medium" id="typography-body-copy">
+    Hlavný text
+  </h3>
 
-    <div class="example">
-        <div class="text">
-            {% include "snippets/typography_paragraphs_example.html" %}
-        </div>
-    </div>
+  <ul class="list list-bullet text">
+    <!--<li>use GDS Transport Website Light</li>-->
+    <li>Vyhnite sa nadmernému používaniu tučného písma a používaniu šikmého rezu písma (kurzíva).</li>
+    <li>Veľkosť hlavného textu je 19 pixelov, pre menšie obrazovky 16 pixelov.</li>
+    <li>Veľkosť písma sa povinne definuje v relatívnych jednotkách, pomocou hodnôt xx-small,
+      x-small, small, medium, large, x-large a xx-large alebo pomocou percent, hodnôt smaller, larger a jednotiek em a ex.
+      Veľkosť písma sa nedefinuje prostredníctvom jednotiek pt, pc, in, cm, mm a px. </li>
+    <li>Uistite sa, že riadky textu nepresahujú 75 znakov, keďže viac znakov spraví text menej čitateľným.</li>
+  </ul>
 
-    <pre>
+<div class="example">
+  <div class="text">
+    {% include "snippets/typography_paragraphs.html" %}
+  </div>
+</div>
+
+<pre>
+
 <code class="language-markup">
   {% filter escape %}
     {% include "snippets/typography_paragraphs.html" %}
