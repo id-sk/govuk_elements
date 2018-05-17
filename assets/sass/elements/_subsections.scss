@@ -133,9 +133,9 @@
       margin-top: -8px;
 
       // PNG fallback for SVG
-      background-image: image-url('icons-plus-minus.png');
+      background-image: file-url('icons-plus-minus.png');
       // SVG sprite
-      background: image-url("icons-plus-minus.svg"), linear-gradient(transparent, transparent);
+      background: file-url("icons-plus-minus.svg"), linear-gradient(transparent, transparent);
       background-repeat: no-repeat;
       background-position: 0 -16px;
     }
