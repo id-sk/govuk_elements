@@ -36,7 +36,7 @@
 
   <h3 class="heading-medium" id="vyhody-zhrnutia">Výhody zhrnutia</h3>
   <p class="text">Hlavné výhody stránky so zhrnutím sú:</p>
-  <ul class="list list-bullet">
+  <ul class="list list-bullet text">
     <li>zvýšené miery dokončenia - používatelia sú si istí, že boli zaznamenané správne dáta, a tak sú menej náchylní k zrušeniu procesu pred jeho dokončením,</li>
     <li>zníženie chybovosti - používateľom poskytnete druhú príležitosť všimnúť si a opraviť chybu pred tým, ako odošlú údaje.</li>
 
@@ -48,7 +48,7 @@
   <p class="text">
     Zhrnutie má obsahovať:
   </p>
-  <ul class="list list-bullet">
+  <ul class="list list-bullet text">
     <li>jasnú informáciu, že na stránke je potrebné tlačidlom potvrdiť správnosť zadaných údajov a že proces nebude dokončený, kým používatelia svoje údaje nepotvrdia,</li>
     <li>zoznam všetkých predošlých odpovedí, ktoré používateľ v procese vyplnil,</li>
     <li>informáciu o poplatku, ktorý bude používateľ platiť, spolu s vysvetlením, ako bola stanovená výška poplatku za službu,</li>
@@ -57,10 +57,10 @@
 
   <p class="text">Stránka zhrnutia by mala používateľovi poskytnúť možnosť vytlačiť vyplnené údaje vo formáte .pdf, možnosť exportu údajov prostredníctvom alternatívnych odkazov a možnosť uložiť svoju žiadosť do konceptov v elektronickej schránke.</p>
 
-  <h3 class="heading-medium" id="vytvorenie-stranky">Stránka zhrnutia by mala používateľovi poskytnúť možnosť vytlačiť vyplnené údaje vo formáte .pdf, možnosť exportu údajov prostredníctvom alternatívnych odkazov a možnosť uložiť svoju žiadosť do konceptov v elektronickej schránke.</h3>
+  <h3 class="heading-medium" id="vytvorenie-stranky">Vytvorte stránku jednoduchú na porozumenie</h3>
   <p class="text">Informácie v zhrnutí štrukturujte prehľadne:
   </p>
-  <ul class="list list-bullet">
+  <ul class="list list-bullet text">
     <li>Ak je to možné, rozdeľte obsah do viacerých častí.</li>
     <li>Zobrazte iba časti, ktoré sú relevantné pre používateľa - napríklad, ak už raz používateľ uviedol, že je zo Slovenska, uvádzajte iba časti týkajúce sa jeho odpovede a nie tie, ktoré s jeho odpoveďou nesúvisia.</li>
     <li>Formulujte vaše otázky tak, aby odpovede používateľa vhodne dotvárali stránku “Zhrnutie” - napríklad, nepotrebujete označovať jednotlivé položky adresy, a rovnako môžete prepísať dlhé otázky na kratšie tvrdenia.</li>
@@ -82,19 +82,14 @@
   <p class="text">K odkazu “Zmeniť” pridajte skrytý text, aby tlačidlo malo zmysel aj keď ho čítače obrazoviek čítajú mimo kontext.</p>
   <p class="text">Napríklad:</p>
 
-  <xmp>
+<pre>
+<code class="language-markup">
+  {% filter escape %}
     <a href="/renew/name/edit">Zmeniť<span class="visually-hidden"> meno</span></a>
-  </xmp>
+  {% endfilter %}
+</code>
+</pre>
 
-  <!--
-  <h3 class="heading-medium" id="suvisiace">Súvisiace návody</h3>
-  <p class="text">Tieto návody môžu byť pre vás užitočné:</p>
-  <ul class="list list-bullet">
-      <li><a href="/#working-with-patterns">ID-SK dizajnové vzory</a></li>
-      <li><a href="https://www.gov.uk/service-manual/design/using-the-govuk-template-frontend-toolkit-and-elements">použitie ID-SK šablóny, frontend toolkit a elementy</a></li>
-      <li><a href="https://www.gov.uk/service-manual/design/making-prototypes">Vytváranie prototypov</a></li>
-  </ul>
-  -->
 </main>
 {% endblock %}
 
