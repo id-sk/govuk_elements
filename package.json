@@ -6,7 +6,7 @@
   "homepage": "https://idsk-elements.herokuapp.com/",
   "license": "MIT",
   "engines": {
-    "node": ">=8.0.0"
+    "node": "^8.0.0"
   },
   "dependencies": {
     "body-parser": "^1.14.1",

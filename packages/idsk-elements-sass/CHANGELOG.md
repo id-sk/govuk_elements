@@ -1,3 +1,6 @@
+# 4.2.0
+- Benchmark section
+
 # 4.1.2
 - Migrate to ID-SK.
   - Rename to idsk-elements-sass
