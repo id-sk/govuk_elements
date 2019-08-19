@@ -4,3 +4,53 @@ $path: "/public/images/";
 
 // Import all the idsk-elements partials listed in _idsk-elements.scss
 @import "idsk-elements";
+
+// Create responsive video or slideshow embeds based on the width of the parent by creating an intrinsic ratio that scales on any device.
+// copied from Bootstrap 4
+// Credit: Nicolas Gallagher and SUIT CSS.
+// Hack for Benchmark presentation
+// only for ratio 16:9 
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+
+  margin-top: em(5, 16);
+  margin-bottom: em(20, 16);
+
+  @include media(tablet) {
+    margin-top: em(5);
+    margin-bottom: em(20);
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
+  }
+
+  .embed-responsive-item,
+  iframe,
+  embed,
+  object,
+  video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+.margin-top-negative {
+  margin-top: em(-10);
+}
+
+.margin-top-xlarge {
+  margin-top: em(64);
+}
