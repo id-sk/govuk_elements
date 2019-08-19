@@ -1,0 +1,146 @@
+{% extends "layout.html" %}
+
+{% block main_content %}
+
+<main role="main" id="content" lang="en">
+
+  <h1 class="heading-xlarge">
+    Benchmark životných situácií
+  </h1>
+
+  <h2 class="heading-small heading-contents">Obsah:</h2>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <ul class="list list-contents">
+        <li><a href="#benchmark">Čo je to benchmark životných situácií</a></li>
+        <li><a href="#metodika">Metodika</a></li>
+        <li><a href="#vyhodnotenie">Vyhodnotenie stavu existujúcich ŽS</a></li>
+        <li><a href="#zlepsenia">Návrhy na zlepšenie</a></li>
+        <li><a href="#dokumenty">Všetky súvisiace dokumenty</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 class="heading-medium" id="benchmark">Objektivita, sebahodnotenie, návod na zlepšenie.</h3>
+  <p class="text">Tri kľúčové pojmy tejto metodiky. Dôvodom vzniku tohto dokumentu je úsilie prispieť k zlepšeniu elektronických služieb na Slovensku. Nejde len o formálne napĺňanie dlhodobého procesu digitalizácie verejných služieb v zmysle <a href="https://www.vicepremier.gov.sk/sekcie/informatizacia/egovernment/strategicke-dokumenty/narodna-koncepcia-informatizacie-verejnej-spravy-nikvs/index.html" target="_blank">Národnej koncepcie informatizácie verejnej správy</a>. Našim úprimným záujmom je povýšiť občana a postaviť ho ako používateľa do centra digitalizácie. Inšpiruje nás k tomu spolupráca s uznávanými zahraničnými expertmi a skúsenosti z krajín, ktoré sú na popredných miestach kvality elektronizácie verejnej správy.</p>
+  <p class="text">Pozreli sme sa na elektronické služby v kontexte životných situácií, ktorými občan či podnikateľ prechádza. Hodnotenie vzniklo ako nástroj na identifikáciu zmysluplných rozvojových aktivít, podklad na dialóg o kvalite služby v inštitúcii, ktorá ju prevádzkuje, ale aj medzi inštitúciami verejnej správy, ktoré realizujú spoločnú životnú situáciu. Výsledné hodnotenie v sebe inovatívnym spôsobom kombinuje aktuálne poznatky z oblastí návrhu služieb (service design), UX dizajnu (user experience design – dizajn používateľskej skúsenosti) a behaviorálnych inovácií. Tieto oblasti doposiaľ politika digitalizácie opomínala a prišiel ten správny čas to zmeniť.</p>
+  <p class="text">Pri svojej práci si všímame ľudské správanie, potreby, rozhodovanie pri používaní elektronických služieb štátu. Z vlastnej skúsenosti, dostupných materiálov, podnetov laickej aj odbornej verejnosti vnímame problémy a kritiku aktuálneho stavu. Našim zámerom je priniesť reálny pohľad na aktuálny stav a často subjektívne hodnotenia v čo najväčšej možnej miere objektivizovať.</p>
+  <p class="text">Budúcnosť predpokladá zvyšovanie počtu elektronických služieb a stúpa povinnosť verejnosti ich využívať. Občania financujú služby štátu zo svojich daní a to z nich robí najdôležitejších „akcionárov“. Ako používatelia prirodzene a právom očakávajú, že komunikácia s verejnou správou bude jednoduchá, rýchla, a že im poskytne všetky potrebné informácie. Úlohou poskytovateľov je zistiť, či elektronické služby naozaj spĺňajú očakávania a potreby občanov. Ako súčasť metodiky preto prinášame pomôcku, podrobný spôsob na sebahodnotenie.</p>
+  <p class="text">Zároveň hodnotenie slúži ako náhrada konkurenčného tlaku, ktorý vo verejnom sektore neexistuje v rovnakej miere ako v súkromnom. Chceme objektívne zhodnotiť verejné služby, pomenovať problémy a nedostatky, a tým vytvoriť tlak na zlepšenie ich kvality. Našim cieľom nie je kritizovať a znevažovať prácu iných, máme záujem prispieť ku konštruktívnemu dialógu. Preto prinášame návod na zlepšenie, je ním súbor konkrétnych návrhov a opatrení rozvoja elektronických služieb na Slovensku.</p>
+  <p class="text">Tento dokument je určený predovšetkým pracovníkom verejnej správy, ktorí majú reálny podiel na tvorbe a stave elektronických služieb. Zároveň je určený občanom, podnikateľom či odborníkom, ktorých táto téma zaujíma.</p>
+  <p class="text">Sme otvorení dialógu a budeme vďační za podnetné postrehy či pripomienky k metodike. Opodstatnené námety radi zapracujeme. Vieme, že nás čaká ešte dlhá a kľukatá cesta za kvalitnými elektronickými službami štátu. Sme však odhodlaní prísť až do jej cieľa.</>
+
+  <h3 class="heading-medium" id="benchmark">Čo je to benchmark životných situácií?</h3>
+  <p class="text">
+        Benchmark životných situácií je nástroj na systematické hodnotenie poskytovania, kvality a rozvoja elektronických služieb inštitúcií verejnej správy (ďalej len „elektronické služby“). Logicky zapadá do dlhodobého procesu digitalizácie verejných služieb v zmysle <a href="https://www.vicepremier.gov.sk/sekcie/informatizacia/egovernment/strategicke-dokumenty/narodna-koncepcia-informatizacie-verejnej-spravy-nikvs/index.html">Národnej koncepcie informatizácie verejnej správy</a>. Jeho hlavnou ambíciou je postaviť používateľa s jeho správaním a potrebami do centra digitalizácie – nasmerovať elektronické služby k tomu, aby boli navrhované a rozvíjané so zreteľom na používateľa na prvom mieste.
+  </p>
+  
+  <h3 class="heading-medium" id="metodika">Metodika</h3>
+  <p class="text">
+    Návrh metodiky pre benchmark životných situácií sa zameriava na mapovanie životných situácií, spôsob merania ich kvality a metodológiu ich zlepšovania. Kombinuje v sebe aktuálne poznatky z oblastí návrhu služieb (service design), UX dizajnu (user experience design – dizajn používateľskej skúsenosti) a behaviorálnych inovácií. Práve to sú oblasti, ktoré doposiaľ politika digitalizácie opomínala, no sú nesmierne dôležité pre vytvorenie dobrej skúsenosti občana s verejným sektorom. S ich pomocou dokumenty stanovujú kvalitatívne štandardy pre poskytovanie, prevádzku a rozvoj používateľsky kvalitných a prívetivých elektronických služieb.
+  </p>
+  <p class="text">
+      Kompletné informácie o navrhnutej metodike, ako aj zozname metrík použitých pri benchmarku životných situácií nájdete v dokumente <a href="/public/documents/benchmark/1-dokument-Metodika.pdf">Návrh metodiky pre benchmark životných situácií z pohľadu behaviorálnych intervencií (PDF)</a>.
+  </p>
+
+  <h3 class="heading-medium" id="vyhodnotenie">Vyhodnotenie stavu existujúcich ŽS</h3>
+  
+  <p class="text">
+    Hodnotenie ponúka prehľad toho, do akej miery je v súčasnosti používateľ zapojený do tvorby verejných služieb.  Identifikujeme, ktoré používateľsky dôležité oblasti sú na dobrej úrovni, a ktoré treba zlepšovať. Mapujeme bariéry, s ktorými sa používateľ stretáva pri snahe prejsť životnou situáciou. V treťom dokumente „Návrh  opatrení  pre  zlepšenie  životných situácií  z pohľadu  behaviorálnych  inovácií“, ponúkame odporúčania, ako nedostatky odstrániť.
+  </p>
+  <p class="text">
+    Hodnotením životných situácií sa v konečnom dôsledku snažíme zabezpečiť, aby používatelia dokázali životné situácie dokončiť naprieč viacerými elektronickými službami verejného sektora a aby sa im pritom zdala ich zákaznícka cesta konzistentná a jednoduchá (napríklad vďaka dodržiavaniu Jednotného dizajn manuálu elektronických služieb ID-SK). Hodnotenie má slúžiť aj ako podklad pre spoluprácu medzi rôznymi inštitúciami verejnej sféry, ktoré sa snažia dosiahnuť spoločný cieľ – jednoducho a ľahko priechodnú životnú situáciu občana a/alebo podnikateľa.
+  </p>
+  <p class="text">
+    Aby sme mohli posúdiť, v ktorých životných situáciách bude mať zlepšovanie používateľskej skúsenosti najväčší celkový efekt, musíme vziať do úvahy počet obyvateľov a podnikateľov, ktorí ročne prejdú životnou situáciou. Táto analýza je zachytená nižšie. Najväčšiu celkovú pridanú hodnotu má snaha zlepšovať použivateľskú skúsenosť životných situácií, ktoré sa v grafe nachádzajú v pravom hornom kvadrante (tzn. majú najvyšší celkový potenciál zlepšenia a zároveň najvyššiu ročnú početnosť).
+  </p>
+  <div class="example example-images">
+    <div class="grid-row">
+      <div class="column-full">
+        <img src="/public/images/benchmark/PZ-pocetnost.jpg" alt="Graf: Celkový potenciál zlepšenia ŽS vzhľadom na ich ročnú početnosť"></p>
+      </div>
+    </div>
+  </div>
+  <p class="text">
+      Zhrnutie výsledkov benchmarku životných situácií si môžete pozrieť v prezentácií nižšie.
+  </p>
+  <div class="embed-responsive"><iframe class="embed-responsive-item" src="https://docs.google.com/presentation/d/e/2PACX-1vT0LOR5sFj7NzosbTrlsvP6HeNiiQsPtICVjICn7vRZ9w7MveE5s7pg-51eetIwtm_5vKgn8o4twNW1/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
+  <p class="text-secondary margin-top-negative">Stiahnite si prezentáciu vo <a href="/public/documents/benchmark/Benchmark-ZS-prezentacia.pdf" target="_blank">formáte pdf</a></p>
+
+  <p class="text">
+    Ak máte záujem o podrobné výsledky, nájdete ich spísané v dokumente <a href="/public/documents/benchmark/2-dokument-Hodnotenie.pdf" target="_blank">Vyhodnotenie existujúceho stavu životných situácií (PDF)</a>. Presné obodovanie životných situácií nájdete v dokumente <a href="/public/documents/benchmark/Bodovanie-ZS.xlsx">Benchmark životných situácií – bodovací dokument (.xlsx)</a>.
+  </p>
+  <h4 class="heading-small">Ako sme vybrali 25 životných situácií</h4>
+  
+  <p class="text">
+    Pri výbere 25 životných situácií sme vychádzali zo strategického dokumentu "Detailný akčný plán informatizácie verejnej správy (2017-2020)".  Našou prioritou bola možnosť ohodnotiť existujúce elektronické služby. Z finálneho súboru elektronických služieb sme vylúčili tie, ktoré sú procesne súčasťou zásadných, aktuálne prebiehajúcich projektov či opatrení (Napr. Výpis z registra trestov, ktorý je súčasťou balíka opatrení v boji proti byrokracii z dielne UPVII).</p>
+  <p class="text">Názvy životných situácií sme zvolili z pohľadu používateľa, čo najpresnejšia identifikácia týchto ŽS je v prílohe. Hodnotili sme nasledovných 25 životných situácií:</p>
+  <ul class="list list-number">
+    <li>Plnenie si daňových povinností – zamestnanec FO</li>
+    <li>Plnenie si daňových povinností – SZČO / PO</li>
+    <li>Podávanie kontrolného výkazu</li>
+    <li>Sankcie Ministerstva vnútra</li>
+    <li>Platenie sociálnych odvodov – SZČO / PO</li>
+    <li>Príspevok pri narodení dieťaťa</li>
+    <li>Prídavky na dieťa</li>
+    <li>Založenie s.r.o. / a.s. </li>
+    <li>Zápis do obchodného registra – PO </li>
+    <li>Kúpa / nadobudnutie vozidla </li>
+    <li>Predaj vozidla</li>
+    <li>Živnosť – založenie</li>
+    <li>Živnosť – zmena</li>
+    <li>Živnosť – prerušenie</li>
+    <li>Živnosť – ukončenie</li>
+    <li>Bývanie – Stavba rodinného domu</li>
+    <li>Bývanie – Prihlásenie (zmena) trvalého pobytu</li>
+    <li>Rodinný živo – Rozvod</li>
+    <li>Sociálne dávky - Rodičovský príspevok</li>
+    <li>Sociálne dávky - Príspevok v nezamestnanosti</li>
+    <li>Domáhanie sa práva – Podanie na súd – Žaloba </li>
+    <li>Domáhanie sa práva – Odvolanie sa,</li>
+    <li>Doklady – Oznámenie straty občianskeho preukazu</li>
+    <li>Bežné podnikateľské operácie – Vykazovanie štatistík</li>
+    <li>Prihlásenie zamestnanca do sociálnej poisťovne      </li>
+  </ul>
+
+  <h4 class="headline-small">Ako čítať hodnotenie</h4>
+  <p class="text">
+    Toto hodnotenie má byť motiváciou pre inštitúcie verejnej správy a podniky, ktoré sa podieľajú na vývoji a správe verejných služieb. Ukazuje, na čo sa v procese vytvárania služby zamerať, aby bola skúsenosť so službou prívetivá a bezproblémová. Hodnotenie má zároveň slúžiť ako ocenenie vašej práce a snahy poskytovať kvalitné služby.
+  </p>
+  <p class="text">
+    Hodnotenie má motivovať predstaviteľov verejnej služby pozrieť sa na služby očami používateľa, cez optiku životnej situácie. Niektoré životné situácie sú zložené z viacerých služieb, ktoré spravujú rôzne inštitúcie. V rámci takých životných situácií sme prešli rôznymi webovými sídlami. Napríklad v rámci životnej situácii stavba rodinného domu sme prešli webovými sídlami Ústredného portálu verejnej správy a Katastrálnym portálom. Ak jeden z týchto článkov nesplnil kritériá hodnotenia, životná situácia nezískala za dané kritérium body. Môže sa tak stať, že v rámci jednej životnej situácie je služba, ktorá ponúka kvalitný zákaznícky zážitok, a aj služba, ktorá má veľa nedostatkov.
+  </p>
+  <p class="text">
+    Návrhy a inšpiráciu, ako sa dopracovať k vyššiemu hodnoteniu, ponúkame v dokumente „<a href="/public/documents/benchmark/1-dokument-Metodika.pdf" target="_blank">Návrh metodiky pre benchmark životných situácií z pohľadu behaviorálnych intervencií (PDF)</a>” z výzvy „Vypracovanie benchmarku životných situácií z pohľadu behaviorálnych intervencií, používateľskej prívetivosti a zákazníckej skúsenosti”, ktorý bude publikovaný na príslušnom webovom sídle.
+  </p>
+  <h3 class="heading-medium" id="zlepsenia">Návrh opatrení na zlepšenie životných situácií</h3>
+  <p class="text">
+    Kritériá benchmarku sú dobrým vodítkom pre skvalitnenie elektronických služieb. Akonáhle životná situácia nespĺňa konkrétne kritérium, existuje priestor pre návrh na odstránenie nedostatku.
+  </p>
+  <p class="text">
+    V dokumente <a href="/public/documents/benchmark/3-dokument-Navrh-opatreni.pdf" target="_blank">Návrh opatrení pre zlepšenie životných situácií z pohľadu behaviorálnych intervencií (PDF)</a> hovoríme o odporúčaniach a všeobecných opatreniach na zlepšenie elektronických služieb a zároveň ponúkame konkrétne návrhy riešení pre vybrané 3 životné situácie.
+  </p>
+  <p class="text">
+    Aby sa služby stali kvalitnými a dobre fungovali v kontexte životných situácií, je nutné uvažovať o náročnejších zmenách z hľadiska investície času, financií a ľudských zdrojov (napríklad procesné alebo legislatívne zmeny). Od uvedenia našich všeobecných odporúčaní do praxe očakávame, že sa uľahčí zavádzanie behaviorálnych intervencií do služieb v rámci životných situácií.
+  </p>
+  <p class="text">
+    Prehľad odporúčaní a návrhov všeobecných opatrení na zlepšenie elektronických služieb si môžete pozrieť na prezentácii nižšie.
+  </p>
+  
+  <div class="embed-responsive"><iframe class="embed-responsive-item" src="https://docs.google.com/presentation/d/e/2PACX-1vT0LOR5sFj7NzosbTrlsvP6HeNiiQsPtICVjICn7vRZ9w7MveE5s7pg-51eetIwtm_5vKgn8o4twNW1/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
+  <p class="text-secondary margin-top-negative">Stiahnite si prezentáciu vo <a href="/public/documents/benchmark/Benchmark-ZS-prezentacia.pdf" target="_blank">formáte pdf</a></p>
+  
+  <h3 class="heading-medium" id="dokumenty">Všetky súvisiace dokumenty</h3>
+  <p class="text">
+    <a href="/public/documents/benchmark/Benchmark-ZS-prezentacia.pdf" target="_blank">Benchmark životných situácií – prezentácia výsledkov (PDF)</a><br>
+    <a href="/public/documents/benchmark/1-dokument-Metodika.pdf" target="_blank">Návrh metodiky pre benchmark životných situácií z pohľadu behaviorálnych intervencií (PDF)</a><br>
+    <a href="/public/documents/benchmark/2-dokument-Hodnotenie.pdf" target="_blank">Vyhodnotenie existujúceho stavu životných situácií (PDF)</a><br>
+    <a href="/public/documents/benchmark/3-dokument-Navrh-opatreni.pdf" target="_blank">Návrh opatrení pre zlepšenie životných situácií z pohľadu behaviorálnych intervencií (PDF)</a><br>
+    <a href="/public/documents/benchmark/Bodovanie-ZS.xlsx" target="_blank">Benchmark životných situácií – bodovací dokument (.xlsx)</a>
+  </p>
+
+  <p class="text margin-top-xlarge">
+    Akékoľvek otázky, postrehy alebo pripomienky nám, prosím, píšte na <a href="mailto:brisk@vicepremier.gov.sk">brisk@vicepremier.gov.sk</a>.
+  </p>
+</main>
+{% endblock %}
