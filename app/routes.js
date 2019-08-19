@@ -351,5 +351,11 @@ module.exports = {
       var pageName = 'Slovník'
       res.render('dictionary/slovnik', { 'page_name': pageName })
     })
+
+    // Benchmark
+    app.get('/benchmark-zivotnych-situacii', function (req, res) {
+      var pageName = 'Benchmark životných situácií'
+      res.render('benchmark/benchmark', { 'page_name': pageName })
+    })
   }
 }

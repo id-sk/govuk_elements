@@ -16,7 +16,7 @@ const sass = require('gulp-sass')
 // ---------------------------------------
 
 gulp.task('clean', () => {
-  return del(paths.public)
+  return del([`${paths.public}*`, `!${paths.public}documents`])
 })
 
 // Styles build task ---------------------
