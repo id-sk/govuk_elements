@@ -16,7 +16,9 @@ const sass = require('gulp-sass')
 // ---------------------------------------
 
 gulp.task('clean', () => {
-  return del(paths.public)
+  return del(paths.public+'images')
+  return del(paths.public+'javascripts')
+  return del(paths.public+'stylesheets')
 })
 
 // Styles build task ---------------------
