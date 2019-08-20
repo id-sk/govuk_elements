@@ -16,7 +16,7 @@ const sass = require('gulp-sass')
 // ---------------------------------------
 
 gulp.task('clean', () => {
-  return del([`${paths.public}*`, `!${paths.public}documents`])
+  return del(paths.public)
 })
 
 // Styles build task ---------------------
@@ -35,6 +35,15 @@ gulp.task('styles', () => {
     .pipe(rename({ suffix: '.min' }))
     .pipe(cssnano())
     .pipe(gulp.dest(paths.publicCss))
+})
+
+// Documents build task ---------------------
+// Copies documents to /public/documents
+// ---------------------------------------
+
+gulp.task('documents', () => {
+  return gulp.src(paths.assetsDoc + '**/*')
+    .pipe(gulp.dest(paths.publicDoc))
 })
 
 // Images build task ---------------------
@@ -59,7 +68,7 @@ gulp.task('scripts', () => {
 // ---------------------------------------
 
 gulp.task('build', cb => {
-  runsequence('clean', ['styles', 'images', 'scripts'], cb)
+  runsequence('clean', ['documents', 'styles', 'images', 'scripts'], cb)
 })
 
 // Server task --------------------------
@@ -101,7 +110,11 @@ gulp.task('test:app', () =>
 // When a file is changed, re-run the build task.
 // ---------------------------------------
 
-gulp.task('watch', ['watch:styles', 'watch:scripts', 'watch:images'])
+gulp.task('watch', ['watch:documents', 'watch:styles', 'watch:scripts', 'watch:images'])
+
+gulp.task('watch:documents', () => {
+  return gulp.watch(paths.assetsDoc + '**/*', ['documents'])
+})
 
 gulp.task('watch:styles', () => {
   return gulp.watch(paths.assetsScss + '**/*.scss', ['styles'])
