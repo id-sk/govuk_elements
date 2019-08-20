@@ -1,3 +1,6 @@
+# 4.2.1
+- fiy links for published PDF documents and presentations
+
 # 4.2.0
 - Benchmark section
 
