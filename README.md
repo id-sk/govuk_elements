@@ -1,3 +1,7 @@
+:warning: Tento repozitár je staršia verzia ID-SK elements, ktorá už nebude podporovaná a udržiavaná. **[Ak plánujete použiť ID-SK, využite novú verziu ID-SK frontend](https://github.com/id-sk/id-sk-frontend)**.
+
+:warning: This repository is an older version of ID-SK Elements that will no longer be supported and maintained. **[If you plan to use ID-SK, please use the new version of ID-SK Frontend](https://github.com/id-sk/id-sk-frontend)**.
+
 ID-SK elements ·
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Greenkeeper badge](https://badges.greenkeeper.io/id-sk/idsk_elements.svg)](https://greenkeeper.io/)
